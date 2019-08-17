@@ -5,6 +5,7 @@ const hbs=require('hbs')
 const http=require('http')
 const socketio=require('socket.io')
 
+const SERVER_PORT=process.env.PORT||3333
 
 
 const app=express()
@@ -69,6 +70,6 @@ io.on('connection', (socket) => {
 });
 
 
-server.listen(2323,()=>{
+SERVER_PORT.listen(2323,()=>{
     console.log("server started at 2323 port")
 })
