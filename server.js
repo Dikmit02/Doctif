@@ -71,6 +71,6 @@ io.on('connection', (socket) => {
 });
 
 
-SERVER_PORT.listen(3333,()=>{
+app.listen(SERVER_PORT,()=>{
     console.log("server started at 2323 port")
 })
