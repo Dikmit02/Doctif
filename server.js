@@ -8,6 +8,7 @@ const socketio=require('socket.io')
 const SERVER_PORT=process.env.PORT||3333
 
 
+
 const app=express()
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
@@ -70,6 +71,6 @@ io.on('connection', (socket) => {
 });
 
 
-SERVER_PORT.listen(2323,()=>{
+SERVER_PORT.listen(3333,()=>{
     console.log("server started at 2323 port")
 })
